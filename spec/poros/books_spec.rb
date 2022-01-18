@@ -6,7 +6,6 @@ RSpec.describe Books, :vcr do
 
     expect(bs).to be_a Books
     expect(bs.destination).to be_a String
-    expect(bs.forecast).to be_a Forecast
     expect(bs.total_books_found).to be_an Integer
     expect(bs.books).to be_an Array
     expect(bs.books.first).to be_a Hash

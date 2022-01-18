@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Tue, 18 Jan 2022 17:29:04 GMT
+      - Tue, 18 Jan 2022 17:49:50 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.177 TT 0 0.209"'
+      - '"SR 1 0.167 TT 0 0.187"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -8527,5 +8527,5 @@ http_interactions:
             "q": "denver",
             "offset": null
         }
-  recorded_at: Tue, 18 Jan 2022 17:29:04 GMT
+  recorded_at: Tue, 18 Jan 2022 17:49:51 GMT
 recorded_with: VCR 6.0.0
