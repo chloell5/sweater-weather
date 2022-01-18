@@ -16,9 +16,6 @@ development:
   adapter: postgresql
   encoding: unicode
   database: sweater-weather_development
-  pool: 5
-  username: sweater-weather
-  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -42,14 +39,8 @@ test:
   adapter: postgresql
   encoding: unicode
   database: sweater-weather_test
-  pool: 5
-  username: sweater-weather
-  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: sweater-weather_production
-  pool: 5
-  username: sweater-weather
-  password:
