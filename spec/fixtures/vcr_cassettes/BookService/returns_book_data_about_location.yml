@@ -2,41 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.openweathermap.org/search.json?appid=006f17d3b2f2e16c3aa77e0406867d0c&exclude=minutely,alerts&q=denver&units=imperial
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.1.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Tue, 18 Jan 2022 16:33:47 GMT
-      Content-Type:
-      - text/html
-      Content-Length:
-      - '150'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404
-        Not Found</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"
-  recorded_at: Tue, 18 Jan 2022 16:33:47 GMT
-- request:
-    method: get
     uri: http://openlibrary.org/search.json?q=denver
     body:
       encoding: US-ASCII
@@ -58,7 +23,7 @@ http_interactions:
       Server:
       - nginx/1.18.0 (Ubuntu)
       Date:
-      - Tue, 18 Jan 2022 16:34:20 GMT
+      - Tue, 18 Jan 2022 17:29:04 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -72,7 +37,7 @@ http_interactions:
       Access-Control-Max-Age:
       - '86400'
       X-Ol-Stats:
-      - '"SR 1 0.200 TT 0 0.221"'
+      - '"SR 1 0.177 TT 0 0.209"'
       Referrer-Policy:
       - no-referrer-when-downgrade
     body:
@@ -8562,5 +8527,5 @@ http_interactions:
             "q": "denver",
             "offset": null
         }
-  recorded_at: Tue, 18 Jan 2022 16:34:20 GMT
+  recorded_at: Tue, 18 Jan 2022 17:29:04 GMT
 recorded_with: VCR 6.0.0

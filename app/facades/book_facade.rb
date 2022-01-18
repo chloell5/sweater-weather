@@ -1,19 +1,15 @@
 class BookFacade
   class << self
-    def book_search(loc)
+    def get_info(loc)
+      fc = ForecastFacade.forecast(loc)
+
       bs = BookService.find_books(loc)
-      bs[:docs].map do |book|
-        Book.new(book)
-      end
-    end
 
-    def forecast(loc)
-      fc = ForecastService.loc_forecast(coords(loc))
-      Forecast.new(fc)
-    end
+      bc = bs[:numFound]
 
-    def coords(loc)
-      MapService.get_location(loc)
+      books = bs[:docs]
+
+      Books.new(destination: loc, forecast: fc, total_books_found: bc, books: books)
     end
   end
 end

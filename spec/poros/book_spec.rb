@@ -1,12 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe Book, :vcr do
+RSpec.describe Books, :vcr do
   it 'has attributes' do
-    bs = BookFacade.book_search('denver')
-    book = bs.first
+    bs = BookFacade.get_info('denver')
 
-    expect(book.isbn).to be_an Array
-    expect(book.title).to be_a String
-    expect(book.publisher).to be_an Array
+    expect(bs).to be_a Books
+    expect(bs.destination).to be_a String
+    expect(bs.forecast).to be_a Forecast
+    expect(bs.total_books_found).to be_an Integer
+    expect(bs.books).to be_an Array
+    expect(bs.books.first).to be_a Hash
   end
 end
