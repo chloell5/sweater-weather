@@ -1,6 +1,8 @@
 require 'rails_helper'
 
 describe 'Create user' do
+  let(:headers) { { 'CONTENT_TYPE' => 'application/json' } }
+
   it 'creates a user' do
     user_params = {
       email: 'test@test.com',
@@ -8,7 +10,7 @@ describe 'Create user' do
       password_confirmation: '12345'
     }
 
-    post '/api/v1/users', params: user_params
+    post '/api/v1/users', params: user_params.to_json, headers: headers
 
     expect(response).to be_successful
 
@@ -29,7 +31,7 @@ describe 'Create user' do
       password_confirmation: '1234'
     }
 
-    post '/api/v1/users', params: user_params
+    post '/api/v1/users', params: user_params.to_json, headers: headers
 
     expect(response).to have_http_status(400)
   end
@@ -41,7 +43,7 @@ describe 'Create user' do
       password_confirmation: '12345'
     }
 
-    post '/api/v1/users', params: user_params
+    post '/api/v1/users', params: user_params.to_json, headers: headers
 
     expect(response).to be_successful
 
@@ -51,7 +53,7 @@ describe 'Create user' do
       password_confirmation: '1111'
     }
 
-    post '/api/v1/users', params: user_params
+    post '/api/v1/users', params: user_params.to_json, headers: headers
 
     expect(response).to have_http_status(400)
   end
@@ -61,7 +63,7 @@ describe 'Create user' do
       password_confirmation: '1234'
     }
 
-    post '/api/v1/users', params: user_params
+    post '/api/v1/users', params: user_params.to_json, headers: headers
 
     expect(response).to have_http_status(400)
   end
@@ -70,7 +72,7 @@ describe 'Create user' do
       email: 'test@test.com'
     }
 
-    post '/api/v1/users', params: user_params
+    post '/api/v1/users', params: user_params.to_json, headers: headers
 
     expect(response).to have_http_status(400)
   end
