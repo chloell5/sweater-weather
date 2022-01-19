@@ -6,6 +6,14 @@ class MapClient
       JSON.parse(response.body, symbolize_names: true)
     end
 
+    def get_cities(url, data)
+      response = conn.get(url) do |city|
+        city.params['from'] = data[:origin]
+        city.params['to'] = data[:destination]
+      end
+      JSON.parse(response.body, symbolize_names: true)
+    end
+
     private
 
     def conn
