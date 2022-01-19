@@ -5,6 +5,7 @@ RSpec.describe Forecast, :vcr do
     forecast = ForecastService.loc_forecast({ lat: 45.0, lng: 90.0})
     fc = Forecast.new(forecast)
 
+    expect(fc).to be_a Forecast
     expect(fc.id).to be nil
 
     expect(fc.current_weather).to be_a Hash
