@@ -6,6 +6,6 @@ class UserSerializer
   attribute :email
 
   attribute :api_key do |object|
-    "#{object.api_keys.first.token}"
+    object.api_keys.first.token.to_s
   end
 end

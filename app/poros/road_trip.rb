@@ -29,9 +29,7 @@ class RoadTrip
     else
       weather = data[:weather].hourly_weather.find do |hour|
         timecheck = Time.now.hour + data[:travel_time].first.to_i
-        if timecheck >= 24
-          timecheck -= 24
-        end
+        timecheck -= 24 if timecheck >= 24
         hour[:datetime].hour == timecheck
       end
       {

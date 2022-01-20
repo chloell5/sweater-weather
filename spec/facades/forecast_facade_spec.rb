@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe ForecastFacade, :vcr do
   it 'gets coords' do
-    loc = ForecastFacade.coords("chandler,az")
+    loc = ForecastFacade.coords('chandler,az')
 
     expect(loc).to be_a Hash
     expect(loc.length).to eq(2)
@@ -14,7 +14,7 @@ RSpec.describe ForecastFacade, :vcr do
   end
 
   it 'pulls forecast data from Service for Controller' do
-    loc = ForecastFacade.forecast("chandler,az")
+    loc = ForecastFacade.forecast('chandler,az')
 
     expect(loc).to be_a Forecast
     expect(loc.id).to be nil

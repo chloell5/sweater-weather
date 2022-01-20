@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RoadTrip, :vcr do
   it 'has attributes' do
-    rt = RoadTrip.new({ start_city: 'chandler,az', end_city: 'flagstaff,az'})
+    rt = RoadTrip.new({ start_city: 'chandler,az', end_city: 'flagstaff,az' })
 
     expect(rt).to be_a(RoadTrip)
     expect(rt.id).to be nil

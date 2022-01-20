@@ -14,8 +14,6 @@ class Api::V1::RoadTripController < ApplicationController
 
   def validate_api_key
     key = ApiKey.find_by(token: params[:api_key])
-    if key.nil?
-      render json: { error: '401: Unauthorized' }, status: 401
-    end
+    render json: { error: '401: Unauthorized' }, status: 401 if key.nil?
   end
 end

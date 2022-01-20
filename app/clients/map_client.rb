@@ -18,7 +18,7 @@ class MapClient
 
     def conn
       Faraday.new(
-        url: "http://www.mapquestapi.com",
+        url: 'http://www.mapquestapi.com',
         params: { key: ENV['mapquest_api'] },
         headers: { 'Content-Type' => 'application/json' }
       )

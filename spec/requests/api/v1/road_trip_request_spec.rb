@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Roadtrip API", :vcr do
+RSpec.describe 'Roadtrip API', :vcr do
   let(:headers) { { 'CONTENT_TYPE' => 'application/json' } }
 
   it 'pulls trip and weather info' do
@@ -60,8 +60,6 @@ RSpec.describe "Roadtrip API", :vcr do
     }
 
     post '/api/v1/sessions', params: user_params.to_json, headers: headers
-
-    sesh = JSON.parse(response.body, symbolize_names: true)
 
     trip_params = {
       origin: 'chandler,az',

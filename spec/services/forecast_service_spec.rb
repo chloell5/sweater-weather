@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe ForecastService, :vcr do
   it 'returns locations weather data' do
-    fc = ForecastService.loc_forecast({ lat: 33.0, lng: -112.0})
+    fc = ForecastService.loc_forecast({ lat: 33.0, lng: -112.0 })
 
     expect(fc).to be_a Hash
     expect(fc.size).to eq(7)
