@@ -80,7 +80,7 @@ After cloning the repo:
   6. API endpoints are:
 
     /api/v1/forecast
-    api/v1/backgrounds
+    /api/v1/backgrounds
     /api/v1/users
     /api/v1/sessions
     /api/v1/road_trip
