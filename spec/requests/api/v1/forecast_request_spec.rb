@@ -2,6 +2,7 @@ require 'rails_helper'
 
 describe 'Forecast API', :vcr do
   it 'pulls the forecast for the location' do
+    binding.pry
     get '/api/v1/forecast?location=chandler,az'
 
     expect(response).to be_successful

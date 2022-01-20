@@ -7,7 +7,7 @@ class MapService
     end
 
     def get_trip(start, ending)
-      MapClient.get_cites("/directions/v2/route", origin: start, destination: ending)[:route]
+      MapClient.get_cities("/directions/v2/route", origin: start, destination: ending)[:route]
     end
   end
 end

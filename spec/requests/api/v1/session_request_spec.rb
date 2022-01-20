@@ -29,7 +29,7 @@ describe 'Create session' do
     expect(sesh[:data][:type]).to eq('users')
     expect(sesh[:data][:attributes]).to be_a Hash
     expect(sesh[:data][:attributes].length).to eq(2)
-    expect(sesh[:data][:attributes]).to include(:email, :api_keys)
+    expect(sesh[:data][:attributes]).to include(:email, :api_key)
   end
 
   it 'fails if wrong password' do

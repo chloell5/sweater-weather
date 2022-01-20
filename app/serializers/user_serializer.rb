@@ -3,5 +3,9 @@ class UserSerializer
 
   set_type :users
 
-  attributes :email, :api_keys
+  attribute :email
+
+  attribute :api_key do |object|
+    "#{object.api_keys.first.token}"
+  end
 end
