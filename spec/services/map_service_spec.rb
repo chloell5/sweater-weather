@@ -9,4 +9,11 @@ RSpec.describe MapService, :vcr do
     expect(loc[:lat]).to be_a Float
     expect(loc[:lng]).to be_a Float
   end
+
+  it 'returns trip' do
+    trip = MapService.get_trip('Chandler, AZ', 'Flagstaff, AZ')
+
+    expect(trip).to be_a Hash
+    expect(trip.size).to eq(23)
+  end
 end

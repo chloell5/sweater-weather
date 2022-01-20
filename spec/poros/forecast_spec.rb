@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Forecast, :vcr do
   it 'has attributes' do
-    forecast = ForecastService.loc_forecast({ lat: 45.0, lng: 90.0})
+    forecast = ForecastService.loc_forecast({ lat: 45.0, lng: 90.0 })
     fc = Forecast.new(forecast)
 
     expect(fc).to be_a Forecast

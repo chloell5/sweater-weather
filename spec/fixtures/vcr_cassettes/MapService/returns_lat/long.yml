@@ -2,41 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.openweathermap.org/geocoding/v1/address?appid=006f17d3b2f2e16c3aa77e0406867d0c&exclude=minutely,alerts&location=Chandler,%20AZ&units=imperial
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Faraday v2.1.0
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 404
-      message: Not Found
-    headers:
-      Server:
-      - openresty
-      Date:
-      - Tue, 18 Jan 2022 15:18:13 GMT
-      Content-Type:
-      - text/html
-      Content-Length:
-      - '150'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<html>\r\n<head><title>404 Not Found</title></head>\r\n<body>\r\n<center><h1>404
-        Not Found</h1></center>\r\n<hr><center>openresty</center>\r\n</body>\r\n</html>\r\n"
-  recorded_at: Tue, 18 Jan 2022 15:18:13 GMT
-- request:
-    method: get
     uri: http://www.mapquestapi.com/geocoding/v1/address?key=TdHqzASCAAnZ3Dx8N9LbdS2cv6xPabLq&location=Chandler,%20AZ
     body:
       encoding: US-ASCII
@@ -56,11 +21,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Tue, 18 Jan 2022 15:39:50 GMT
+      - Thu, 20 Jan 2022 06:41:02 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1039'
+      - '1040'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -72,13 +37,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Tue, 18 Jan 2022 15:39:50 GMT
+      - Thu, 20 Jan 2022 06:41:02 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=B9C7EEF4513E322AC6B6F985A9C28B25; Path=/; HttpOnly
+      - JSESSIONID=93DDEA53BCAC752A3DA141F93F43C50D; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -89,6 +54,6 @@ http_interactions:
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Chandler,
         AZ"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Chandler","adminArea5Type":"City","adminArea4":"Maricopa
-        County","adminArea4Type":"County","adminArea3":"AZ","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040492","unknownInput":"","type":"s","latLng":{"lat":33.302285,"lng":-111.840103},"displayLatLng":{"lat":33.302285,"lng":-111.840103},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=TdHqzASCAAnZ3Dx8N9LbdS2cv6xPabLq&type=map&size=225,160&locations=33.302285,-111.840103|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1070122734"}]}]}'
-  recorded_at: Tue, 18 Jan 2022 15:39:50 GMT
+        County","adminArea4Type":"County","adminArea3":"AZ","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282040492","unknownInput":"","type":"s","latLng":{"lat":33.302285,"lng":-111.840103},"displayLatLng":{"lat":33.302285,"lng":-111.840103},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=TdHqzASCAAnZ3Dx8N9LbdS2cv6xPabLq&type=map&size=225,160&locations=33.302285,-111.840103|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1594743219"}]}]}'
+  recorded_at: Thu, 20 Jan 2022 06:41:02 GMT
 recorded_with: VCR 6.0.0

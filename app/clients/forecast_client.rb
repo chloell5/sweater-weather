@@ -10,7 +10,7 @@ class ForecastClient
 
     def conn
       Faraday.new(
-        url: "https://api.openweathermap.org",
+        url: 'https://api.openweathermap.org',
         params: {
           appid: ENV['weather_api'],
           exclude: 'minutely,alerts',

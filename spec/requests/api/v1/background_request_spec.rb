@@ -6,7 +6,7 @@ describe 'Background API', :vcr do
 
     expect(response).to be_successful
 
-    bg = JSON.parse(response.body, symbolize_names:true)
+    bg = JSON.parse(response.body, symbolize_names: true)
 
     expect(bg).to be_a Hash
     expect(bg[:data]).to be_a Hash

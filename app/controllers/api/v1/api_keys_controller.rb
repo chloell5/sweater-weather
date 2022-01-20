@@ -27,7 +27,7 @@ class ApiKeysController < ApplicationController
 
   def destroy
     api_key = current_bearer.api_keys.find(params[:id])
- 
+
     api_key.destroy
   end
 end

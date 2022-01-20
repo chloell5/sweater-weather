@@ -21,7 +21,7 @@ describe 'Create user' do
     expect(user[:data][:type]).to eq('users')
     expect(user[:data][:attributes]).to be_a Hash
     expect(user[:data][:attributes].length).to eq(2)
-    expect(user[:data][:attributes]).to include(:email, :api_keys)
+    expect(user[:data][:attributes]).to include(:email, :api_key)
   end
 
   it 'fails if passwords don\'t match' do
