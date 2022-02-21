@@ -33,8 +33,6 @@
     <a href="https://github.com/chloell5/rails-engine"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/chloell5/rails-engine">View Demo</a>
-    ·
     <a href="https://github.com/chloell5/rails-engine/issues">Report Bug</a>
     ·
     <a href="https://github.com/chloell5/rails-engine/issues">Request Feature</a>
