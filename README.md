@@ -76,12 +76,13 @@ After cloning the repo:
   4. Run `rails db:{create,migrate}`
   5. Run `rails s`
   6. API endpoints are:
-
-    /api/v1/forecast
-    /api/v1/backgrounds
-    /api/v1/users
-    /api/v1/sessions
-    /api/v1/road_trip
+```
+GET    /api/v1/forecast
+GET    /api/v1/backgrounds
+POST   /api/v1/users
+POST   /api/v1/sessions
+POST   /api/v1/road_trip
+```
 <br />
 <p align="right">(<a href="#top">back to top</a>)</p>
 
