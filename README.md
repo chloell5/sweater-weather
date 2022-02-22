@@ -61,7 +61,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a solo project for the Turing School of Software and Design. In it, we learned how to build a backend that connects multiple API requests into one project. Includes user registration and login, weather details, trip information, and a picture of the location. Simply clone down and run on localhost to get started!
+This is a solo project for the Turing School of Software and Design. In it, we learned how to build a backend that connects multiple APIs into one project. Includes user registration and login, weather details, trip information, and a picture of the location. Simply clone down and run on localhost to get started!
 
 API keys can be requested from:
 <br />
